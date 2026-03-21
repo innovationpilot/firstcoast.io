@@ -72,30 +72,36 @@
           </figure>
         </article>
 
-        <form
-          class="contact-form"
-          action="mailto:hello@firstcoast.io"
-          method="post"
-          enctype="text/plain"
-          data-reveal
-        >
-          <label for="name">Name</label>
-          <input id="name" name="Name" type="text" required />
+        <form class="contact-form web3-form" action="https://api.web3forms.com/submit" method="POST" data-reveal>
+          <input type="hidden" name="access_key" value="668e7e9c-be9c-4bfb-bc4d-edf6f72996bb" />
+          <input type="hidden" name="from_name" value="First Coast AI Website" />
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="form-honeypot"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          />
 
-          <label for="company">Company</label>
-          <input id="company" name="Company" type="text" required />
+          <div class="form-field">
+            <label for="contact-email">Email</label>
+            <input id="contact-email" name="email" type="email" required />
+          </div>
 
-          <label for="email">Email</label>
-          <input id="email" name="Email" type="email" required />
+          <div class="form-field">
+            <label for="contact-subject">Title / Subject</label>
+            <input id="contact-subject" name="subject" type="text" required />
+          </div>
 
-          <label for="phone">Phone</label>
-          <input id="phone" name="Phone" type="tel" />
-
-          <label for="message">How can we help?</label>
-          <textarea id="message" name="Message" rows="5" required></textarea>
+          <div class="form-field note-field">
+            <label for="contact-note">Note</label>
+            <textarea id="contact-note" name="message" rows="5"></textarea>
+          </div>
 
           <button type="submit" class="btn">Send Message</button>
-          <p class="form-note">Submitting opens your default email client with this message.</p>
+          <p class="form-note">We will route this directly to Morgan and follow up by email.</p>
+          <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </section>
     </main>

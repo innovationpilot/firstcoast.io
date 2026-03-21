@@ -148,7 +148,36 @@
 
       <section class="container cta-inline" data-reveal>
         <h2>Need help choosing where to start?</h2>
-        <a class="btn" href="contact.html">Book a Discovery Session</a>
+        <form class="contact-form contact-form-inline web3-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="668e7e9c-be9c-4bfb-bc4d-edf6f72996bb" />
+          <input type="hidden" name="from_name" value="First Coast AI Website" />
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="form-honeypot"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          />
+
+          <div class="form-field">
+            <label for="services-email">Email</label>
+            <input id="services-email" name="email" type="email" required />
+          </div>
+
+          <div class="form-field">
+            <label for="services-subject">Title / Subject</label>
+            <input id="services-subject" name="subject" type="text" required />
+          </div>
+
+          <div class="form-field note-field">
+            <label for="services-note">Note</label>
+            <textarea id="services-note" name="message" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Book a Discovery Session</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
       </section>
     </main>
 

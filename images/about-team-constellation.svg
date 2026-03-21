@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">First Coast AI team illustration</title>
+  <desc id="desc">Three abstract team figures connected by a glowing constellation to represent collaborative AI consulting.</desc>
+  <defs>
+    <linearGradient id="bg" x1="92" y1="68" x2="812" y2="650" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#11284d"/>
+      <stop offset="1" stop-color="#060d1a"/>
+    </linearGradient>
+    <linearGradient id="bridge" x1="180" y1="160" x2="760" y2="484" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.48" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientTransform="translate(486 220) rotate(90) scale(188)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="960" height="720" rx="40" fill="url(#bg)"/>
+  <circle cx="486" cy="220" r="188" fill="url(#halo)"/>
+  <g fill="none" stroke="rgba(161, 183, 219, 0.14)" stroke-width="2">
+    <circle cx="482" cy="288" r="214"/>
+    <circle cx="482" cy="288" r="272" opacity="0.6"/>
+  </g>
+  <path d="M242 272C312 206 390 178 482 176C594 172 682 224 734 304" fill="none" stroke="url(#bridge)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M242 272L352 472L612 476L734 304" fill="none" stroke="#5eead4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.74"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M258 334H338" stroke="rgba(233, 240, 255, 0.22)" stroke-width="8"/>
+    <path d="M432 236H530" stroke="rgba(233, 240, 255, 0.22)" stroke-width="8"/>
+    <path d="M630 364H720" stroke="rgba(233, 240, 255, 0.22)" stroke-width="8"/>
+  </g>
+  <g>
+    <circle cx="242" cy="228" r="54" fill="#22d3ee"/>
+    <path d="M158 420C158 352 196 316 242 316C288 316 326 352 326 420V478H158V420Z" fill="#0f2345" stroke="#22d3ee" stroke-width="8"/>
+    <circle cx="482" cy="180" r="58" fill="#5eead4"/>
+    <path d="M390 410C390 332 434 288 482 288C530 288 574 332 574 410V478H390V410Z" fill="#12294d" stroke="#5eead4" stroke-width="8"/>
+    <circle cx="734" cy="258" r="54" fill="#fb7185"/>
+    <path d="M648 444C648 376 686 340 734 340C782 340 820 376 820 444V500H648V444Z" fill="#13264a" stroke="#fb7185" stroke-width="8"/>
+  </g>
+  <g>
+    <circle cx="242" cy="272" r="12" fill="#f8b84a"/>
+    <circle cx="482" cy="176" r="12" fill="#60a5fa"/>
+    <circle cx="734" cy="304" r="12" fill="#ff9a62"/>
+    <circle cx="352" cy="472" r="10" fill="#22d3ee"/>
+    <circle cx="612" cy="476" r="10" fill="#5eead4"/>
+  </g>
+  <rect x="166" y="522" width="628" height="102" rx="28" fill="rgba(16, 28, 53, 0.7)" stroke="rgba(161, 183, 219, 0.16)"/>
+  <g fill="#e9f0ff" font-family="Plus Jakarta Sans, Segoe UI, sans-serif" font-size="28" font-weight="700">
+    <text x="214" y="572">Strategy</text>
+    <text x="432" y="572">Implementation</text>
+    <text x="652" y="572">Enablement</text>
+  </g>
+  <g fill="#a5b9de" font-family="Plus Jakarta Sans, Segoe UI, sans-serif" font-size="22">
+    <text x="214" y="606">A flexible team placeholder for bios and practice leads.</text>
+  </g>
+</svg>

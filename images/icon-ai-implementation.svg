@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">AI Implementation icon</title>
+  <desc id="desc">Connected blocks and directional paths symbolizing AI implementation and operational rollout.</desc>
+  <defs>
+    <linearGradient id="panel" x1="50" y1="36" x2="340" y2="362" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#13264a"/>
+      <stop offset="1" stop-color="#091325"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="112" y1="96" x2="284" y2="278" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.52" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="248" y1="170" x2="308" y2="234" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff9a62"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+  </defs>
+  <rect x="28" y="28" width="344" height="344" rx="34" fill="url(#panel)" stroke="rgba(161, 183, 219, 0.18)"/>
+  <rect x="92" y="98" width="88" height="88" rx="22" fill="#0f2345" stroke="#22d3ee" stroke-width="6"/>
+  <rect x="220" y="146" width="88" height="88" rx="22" fill="#13264a" stroke="#60a5fa" stroke-width="6"/>
+  <rect x="144" y="250" width="96" height="64" rx="22" fill="#0d1d39" stroke="#5eead4" stroke-width="6"/>
+  <path d="M180 142H220" stroke="url(#flow)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M264 234V250" stroke="url(#flow)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M240 282H216" stroke="url(#flow)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M198 250L146 198" stroke="url(#flow)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M244 190L272 190" stroke="#ff9a62" stroke-width="10" stroke-linecap="round"/>
+  <path d="M264 178L290 190L264 202" fill="url(#accent)"/>
+  <path d="M114 122H158" stroke="rgba(233, 240, 255, 0.25)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M240 170H288" stroke="rgba(233, 240, 255, 0.25)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M166 278H218" stroke="rgba(233, 240, 255, 0.25)" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="136" cy="296" r="10" fill="#f8b84a"/>
+  <circle cx="282" cy="118" r="12" fill="#fb7185"/>
+  <circle cx="108" cy="220" r="9" fill="#5eead4"/>
+  <path d="M92 336H308" stroke="rgba(233, 240, 255, 0.16)" stroke-width="8" stroke-linecap="round"/>
+</svg>

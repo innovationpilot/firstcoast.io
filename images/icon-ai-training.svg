@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">AI Training icon</title>
+  <desc id="desc">A workshop screen with audience markers and signal lines representing AI training and workshops.</desc>
+  <defs>
+    <linearGradient id="panel" x1="44" y1="42" x2="348" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#13264a"/>
+      <stop offset="1" stop-color="#081225"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="120" y1="100" x2="278" y2="206" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="166" y1="118" x2="238" y2="176" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8b84a"/>
+      <stop offset="1" stop-color="#ff9a62"/>
+    </linearGradient>
+  </defs>
+  <rect x="28" y="28" width="344" height="344" rx="34" fill="url(#panel)" stroke="rgba(161, 183, 219, 0.18)"/>
+  <rect x="92" y="84" width="216" height="132" rx="20" fill="#0f2345" stroke="url(#screen)" stroke-width="8"/>
+  <path d="M146 246H254" stroke="#28497e" stroke-width="12" stroke-linecap="round"/>
+  <path d="M200 216V288" stroke="#28497e" stroke-width="12" stroke-linecap="round"/>
+  <path d="M144 124H256" stroke="rgba(233, 240, 255, 0.18)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M144 154H226" stroke="rgba(233, 240, 255, 0.18)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M210 110L224 142L260 146L232 168L240 202L210 184L180 202L188 168L160 146L196 142Z" fill="url(#spark)"/>
+  <circle cx="124" cy="292" r="20" fill="#22d3ee" opacity="0.92"/>
+  <circle cx="200" cy="304" r="22" fill="#5eead4" opacity="0.92"/>
+  <circle cx="276" cy="292" r="20" fill="#fb7185" opacity="0.92"/>
+  <path d="M104 336C120 314 142 304 164 304" fill="none" stroke="rgba(233, 240, 255, 0.22)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M180 344C194 320 214 310 236 310" fill="none" stroke="rgba(233, 240, 255, 0.22)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M246 336C262 314 284 304 296 304" fill="none" stroke="rgba(233, 240, 255, 0.22)" stroke-width="8" stroke-linecap="round"/>
+</svg>

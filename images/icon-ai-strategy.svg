@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">AI Strategy icon</title>
+  <desc id="desc">A compass-inspired icon representing AI strategy, planning, and directional clarity.</desc>
+  <defs>
+    <linearGradient id="panel" x1="52" y1="48" x2="352" y2="354" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#13264a"/>
+      <stop offset="1" stop-color="#081225"/>
+    </linearGradient>
+    <linearGradient id="needle" x1="146" y1="106" x2="270" y2="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(200 176) rotate(90) scale(126)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="28" y="28" width="344" height="344" rx="34" fill="url(#panel)" stroke="rgba(161, 183, 219, 0.18)"/>
+  <circle cx="200" cy="176" r="126" fill="url(#glow)"/>
+  <circle cx="200" cy="176" r="112" fill="none" stroke="#28497e" stroke-width="12"/>
+  <circle cx="200" cy="176" r="80" fill="none" stroke="rgba(233, 240, 255, 0.18)" stroke-width="8" stroke-dasharray="3 16" stroke-linecap="round"/>
+  <path d="M200 84V108" stroke="#f8b84a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M292 176H268" stroke="#5eead4" stroke-width="10" stroke-linecap="round"/>
+  <path d="M200 268V244" stroke="#fb7185" stroke-width="10" stroke-linecap="round"/>
+  <path d="M108 176H132" stroke="#60a5fa" stroke-width="10" stroke-linecap="round"/>
+  <path d="M136 240L200 106L250 172Z" fill="url(#needle)"/>
+  <path d="M264 112L200 246L150 180Z" fill="#fb7185" opacity="0.9"/>
+  <circle cx="200" cy="176" r="22" fill="#f8b84a"/>
+  <circle cx="200" cy="176" r="10" fill="#081225"/>
+  <path d="M94 304H306" stroke="rgba(233, 240, 255, 0.16)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M128 328H272" stroke="rgba(94, 234, 212, 0.34)" stroke-width="8" stroke-linecap="round"/>
+</svg>

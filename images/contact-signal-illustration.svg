@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">Contact illustration</title>
+  <desc id="desc">A message bubble and signal beacon representing business outreach, discovery calls, and practical follow-up.</desc>
+  <defs>
+    <linearGradient id="bg" x1="98" y1="70" x2="808" y2="652" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#11284d"/>
+      <stop offset="1" stop-color="#060d1a"/>
+    </linearGradient>
+    <linearGradient id="bubble" x1="176" y1="138" x2="534" y2="444" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="556" y1="168" x2="764" y2="440" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8b84a"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="720" rx="40" fill="url(#bg)"/>
+  <rect x="124" y="118" width="406" height="286" rx="36" fill="#0f2345" stroke="url(#bubble)" stroke-width="10"/>
+  <path d="M246 404L210 520L364 404" fill="#0f2345" stroke="url(#bubble)" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M192 194H438" stroke="rgba(233, 240, 255, 0.18)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M192 248H392" stroke="rgba(233, 240, 255, 0.18)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M192 302H338" stroke="rgba(233, 240, 255, 0.18)" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="658" cy="342" r="34" fill="#f8b84a"/>
+  <path d="M658 192V342" stroke="url(#signal)" stroke-width="18" stroke-linecap="round"/>
+  <path d="M658 150C706 184 742 238 742 300C742 362 706 416 658 450" fill="none" stroke="#fb7185" stroke-width="12" stroke-linecap="round"/>
+  <path d="M658 210C688 232 712 268 712 300C712 332 688 368 658 390" fill="none" stroke="#ff9a62" stroke-width="10" stroke-linecap="round"/>
+  <path d="M658 250C674 262 686 280 686 300C686 320 674 338 658 350" fill="none" stroke="#5eead4" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="658" cy="150" r="18" fill="#fb7185"/>
+  <rect x="146" y="542" width="670" height="94" rx="28" fill="rgba(16, 28, 53, 0.7)" stroke="rgba(161, 183, 219, 0.16)"/>
+  <g fill="#e9f0ff" font-family="Plus Jakarta Sans, Segoe UI, sans-serif" font-size="28" font-weight="700">
+    <text x="198" y="592">Discovery call</text>
+    <text x="448" y="592">Practical scope</text>
+    <text x="654" y="592">Fast follow-up</text>
+  </g>
+  <g fill="#a5b9de" font-family="Plus Jakarta Sans, Segoe UI, sans-serif" font-size="22">
+    <text x="198" y="620">Built to pair beside the contact form or the page intro.</text>
+  </g>
+</svg>

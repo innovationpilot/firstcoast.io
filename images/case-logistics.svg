@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="log-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#060a14"/>
+      <stop offset="60%" stop-color="#0a0f1a"/>
+      <stop offset="100%" stop-color="#0f1829"/>
+    </linearGradient>
+    <radialGradient id="log-horizon-glow" cx="0.5" cy="0.78" r="0.45">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.08"/>
+      <stop offset="40%" stop-color="#1a8a9e" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#0a0f1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="log-crane-light" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="log-glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="log-soft">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="800" height="500" fill="url(#log-sky)"/>
+
+  <!-- Horizon glow -->
+  <rect width="800" height="500" fill="url(#log-horizon-glow)"/>
+
+  <!-- Horizon line -->
+  <line x1="0" y1="390" x2="800" y2="390" stroke="#1a3a50" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Water/ground reflection area -->
+  <rect x="0" y="390" width="800" height="110" fill="#080d17" opacity="0.6"/>
+
+  <!-- Distant city skyline silhouette -->
+  <path d="M0,385 L50,385 L50,370 L65,370 L65,360 L75,360 L75,370 L90,370 L90,375 L120,375 L120,355 L130,355 L130,345 L135,345 L135,355 L145,355 L145,375 L180,375 L180,365 L190,365 L190,358 L195,350 L200,358 L200,365 L220,365 L220,375 L260,375 L260,362 L270,362 L270,350 L275,342 L280,350 L280,362 L295,362 L295,375 L340,375 L340,380 L400,380 L400,372 L410,372 L410,365 L420,365 L420,372 L450,372 L450,380 L800,380 L800,390 L0,390 Z" fill="#0b1322" opacity="0.7"/>
+
+  <!-- AI routing grid lines (background) -->
+  <g opacity="0.06" stroke="#22d3ee" stroke-width="0.5">
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="0" y1="370" x2="800" y2="370"/>
+    <line x1="0" y1="330" x2="800" y2="330"/>
+    <line x1="100" y1="250" x2="100" y2="500"/>
+    <line x1="200" y1="250" x2="200" y2="500"/>
+    <line x1="300" y1="250" x2="300" y2="500"/>
+    <line x1="400" y1="250" x2="400" y2="500"/>
+    <line x1="500" y1="250" x2="500" y2="500"/>
+    <line x1="600" y1="250" x2="600" y2="500"/>
+    <line x1="700" y1="250" x2="700" y2="500"/>
+  </g>
+
+  <!-- AI optimization routing paths -->
+  <g fill="none" stroke="#22d3ee" stroke-width="0.8" opacity="0.12">
+    <path d="M50,420 C150,400 200,380 350,370 S500,360 650,340"/>
+    <path d="M100,450 C200,430 300,400 400,385 S550,370 700,355"/>
+    <path d="M0,400 C100,390 250,375 400,365 S600,350 800,330"/>
+  </g>
+
+  <!-- Routing path nodes -->
+  <g fill="#22d3ee" opacity="0.2">
+    <circle cx="150" cy="405" r="2"/>
+    <circle cx="300" cy="378" r="2.5"/>
+    <circle cx="450" cy="368" r="2"/>
+    <circle cx="600" cy="348" r="2.5"/>
+    <circle cx="200" cy="425" r="1.8"/>
+    <circle cx="400" cy="385" r="2"/>
+    <circle cx="550" cy="365" r="1.8"/>
+  </g>
+
+  <!-- Dashed routing sub-lines -->
+  <g fill="none" stroke="#22d3ee" stroke-width="0.5" stroke-dasharray="4,6" opacity="0.08">
+    <path d="M150,405 L300,378"/>
+    <path d="M300,378 L450,368"/>
+    <path d="M450,368 L600,348"/>
+    <path d="M200,425 L400,385"/>
+    <path d="M400,385 L550,365"/>
+  </g>
+
+  <!-- Crane 1 (left-center) -->
+  <g>
+    <!-- Crane tower -->
+    <rect x="285" y="180" width="8" height="210" fill="#0d1a2e"/>
+    <rect x="283" y="180" width="12" height="4" fill="#141f33"/>
+    <!-- Crane arm horizontal -->
+    <rect x="200" y="178" width="180" height="5" fill="#0f1d30"/>
+    <!-- Crane arm diagonal support -->
+    <line x1="289" y1="184" x2="210" y2="178" stroke="#141f33" stroke-width="1.5"/>
+    <line x1="289" y1="184" x2="370" y2="178" stroke="#141f33" stroke-width="1.5"/>
+    <!-- Crane cable -->
+    <line x1="230" y1="178" x2="230" y2="320" stroke="#1a2840" stroke-width="1" opacity="0.6"/>
+    <!-- Crane hook -->
+    <path d="M226,318 L234,318 L234,328 Q230,334 226,328 Z" fill="#1a2840" opacity="0.5"/>
+    <!-- Crane light -->
+    <circle cx="289" cy="177" r="3" fill="url(#log-crane-light)" filter="url(#log-glow)"/>
+    <circle cx="289" cy="177" r="1.5" fill="#22d3ee" opacity="0.3"/>
+    <!-- Cross-bracing on tower -->
+    <line x1="285" y1="200" x2="293" y2="230" stroke="#1a2840" stroke-width="0.5" opacity="0.4"/>
+    <line x1="293" y1="200" x2="285" y2="230" stroke="#1a2840" stroke-width="0.5" opacity="0.4"/>
+    <line x1="285" y1="240" x2="293" y2="270" stroke="#1a2840" stroke-width="0.5" opacity="0.4"/>
+    <line x1="293" y1="240" x2="285" y2="270" stroke="#1a2840" stroke-width="0.5" opacity="0.4"/>
+    <line x1="285" y1="280" x2="293" y2="310" stroke="#1a2840" stroke-width="0.5" opacity="0.4"/>
+    <line x1="293" y1="280" x2="285" y2="310" stroke="#1a2840" stroke-width="0.5" opacity="0.4"/>
+  </g>
+
+  <!-- Crane 2 (right, smaller/distant) -->
+  <g opacity="0.6">
+    <rect x="620" y="240" width="6" height="150" fill="#0d1a2e"/>
+    <rect x="570" y="238" width="120" height="4" fill="#0f1d30"/>
+    <line x1="623" y1="242" x2="580" y2="238" stroke="#141f33" stroke-width="1"/>
+    <line x1="623" y1="242" x2="680" y2="238" stroke="#141f33" stroke-width="1"/>
+    <line x1="590" y1="238" x2="590" y2="340" stroke="#1a2840" stroke-width="0.8" opacity="0.5"/>
+    <circle cx="623" cy="237" r="2" fill="#22d3ee" opacity="0.15"/>
+  </g>
+
+  <!-- Container stack 1 (left foreground) -->
+  <g>
+    <!-- Bottom row -->
+    <rect x="30" y="360" width="65" height="30" fill="#0d1a2e" stroke="#1a2840" stroke-width="0.8"/>
+    <rect x="97" y="360" width="65" height="30" fill="#101e30" stroke="#1a2840" stroke-width="0.8"/>
+    <rect x="164" y="360" width="65" height="30" fill="#0e1c2c" stroke="#1a2840" stroke-width="0.8"/>
+    <!-- Second row -->
+    <rect x="30" y="328" width="65" height="30" fill="#101e30" stroke="#1a2840" stroke-width="0.8"/>
+    <rect x="97" y="328" width="65" height="30" fill="#0d1a2e" stroke="#1a2840" stroke-width="0.8"/>
+    <rect x="164" y="328" width="65" height="30" fill="#141f33" stroke="#1a2840" stroke-width="0.8"/>
+    <!-- Third row -->
+    <rect x="30" y="296" width="65" height="30" fill="#141f33" stroke="#1a2840" stroke-width="0.8"/>
+    <rect x="97" y="296" width="65" height="30" fill="#0e1c2c" stroke="#1a2840" stroke-width="0.8"/>
+    <!-- Top row -->
+    <rect x="30" y="264" width="65" height="30" fill="#0d1a2e" stroke="#1a2840" stroke-width="0.8"/>
+    <!-- Container ridges (corrugation details) -->
+    <g stroke="#1a2840" stroke-width="0.3" opacity="0.4">
+      <line x1="42" y1="360" x2="42" y2="390"/>
+      <line x1="54" y1="360" x2="54" y2="390"/>
+      <line x1="66" y1="360" x2="66" y2="390"/>
+      <line x1="78" y1="360" x2="78" y2="390"/>
+      <line x1="109" y1="360" x2="109" y2="390"/>
+      <line x1="121" y1="360" x2="121" y2="390"/>
+      <line x1="133" y1="360" x2="133" y2="390"/>
+      <line x1="145" y1="360" x2="145" y2="390"/>
+      <line x1="42" y1="328" x2="42" y2="358"/>
+      <line x1="54" y1="328" x2="54" y2="358"/>
+      <line x1="66" y1="328" x2="66" y2="358"/>
+      <line x1="78" y1="328" x2="78" y2="358"/>
+      <line x1="109" y1="328" x2="109" y2="358"/>
+      <line x1="121" y1="328" x2="121" y2="358"/>
+    </g>
+  </g>
+
+  <!-- Container stack 2 (center-right) -->
+  <g>
+    <rect x="440" y="360" width="60" height="30" fill="#0d1a2e" stroke="#1a2840" stroke-width="0.8"/>
+    <rect x="502" y="360" width="60" height="30" fill="#101e30" stroke="#1a2840" stroke-width="0.8"/>
+    <rect x="564" y="360" width="60" height="30" fill="#0e1c2c" stroke="#1a2840" stroke-width="0.8"/>
+    <rect x="440" y="328" width="60" height="30" fill="#141f33" stroke="#1a2840" stroke-width="0.8"/>
+    <rect x="502" y="328" width="60" height="30" fill="#0d1a2e" stroke="#1a2840" stroke-width="0.8"/>
+    <rect x="440" y="296" width="60" height="30" fill="#0e1c2c" stroke="#1a2840" stroke-width="0.8"/>
+    <rect x="502" y="296" width="60" height="30" fill="#141f33" stroke="#1a2840" stroke-width="0.8"/>
+    <!-- Corrugation -->
+    <g stroke="#1a2840" stroke-width="0.3" opacity="0.4">
+      <line x1="452" y1="360" x2="452" y2="390"/>
+      <line x1="464" y1="360" x2="464" y2="390"/>
+      <line x1="476" y1="360" x2="476" y2="390"/>
+      <line x1="488" y1="360" x2="488" y2="390"/>
+      <line x1="514" y1="360" x2="514" y2="390"/>
+      <line x1="526" y1="360" x2="526" y2="390"/>
+      <line x1="538" y1="360" x2="538" y2="390"/>
+      <line x1="550" y1="360" x2="550" y2="390"/>
+    </g>
+  </g>
+
+  <!-- Container stack 3 (far right, smaller) -->
+  <g opacity="0.7">
+    <rect x="690" y="360" width="55" height="30" fill="#0d1a2e" stroke="#1a2840" stroke-width="0.7"/>
+    <rect x="690" y="328" width="55" height="30" fill="#101e30" stroke="#1a2840" stroke-width="0.7"/>
+    <rect x="747" y="360" width="45" height="30" fill="#0e1c2c" stroke="#1a2840" stroke-width="0.7"/>
+  </g>
+
+  <!-- Ground plane / dock surface -->
+  <rect x="0" y="390" width="800" height="3" fill="#0f1829" opacity="0.8"/>
+
+  <!-- Water reflections -->
+  <g opacity="0.04" fill="#22d3ee">
+    <rect x="50" y="400" width="80" height="1" rx="0.5"/>
+    <rect x="200" y="420" width="60" height="0.8" rx="0.4"/>
+    <rect x="350" y="410" width="100" height="1" rx="0.5"/>
+    <rect x="500" y="430" width="70" height="0.8" rx="0.4"/>
+    <rect x="650" y="415" width="90" height="1" rx="0.5"/>
+    <rect x="100" y="440" width="50" height="0.6" rx="0.3"/>
+    <rect x="400" y="450" width="80" height="0.7" rx="0.35"/>
+    <rect x="600" y="445" width="60" height="0.6" rx="0.3"/>
+  </g>
+
+  <!-- Atmospheric particles/stars -->
+  <g fill="#22d3ee" opacity="0.15">
+    <circle cx="120" cy="80" r="0.8"/>
+    <circle cx="350" cy="50" r="1"/>
+    <circle cx="500" cy="100" r="0.7"/>
+    <circle cx="680" cy="70" r="0.9"/>
+    <circle cx="230" cy="130" r="0.6"/>
+    <circle cx="750" cy="150" r="0.8"/>
+    <circle cx="60" cy="200" r="0.5"/>
+    <circle cx="420" cy="160" r="0.7"/>
+    <circle cx="580" cy="40" r="0.6"/>
+    <circle cx="160" cy="250" r="0.5"/>
+  </g>
+
+  <!-- Horizon glow accent line -->
+  <line x1="150" y1="390" x2="650" y2="390" stroke="#22d3ee" stroke-width="1" opacity="0.06" filter="url(#log-soft)"/>
+
+  <!-- Subtle vignette overlay -->
+  <radialGradient id="log-vignette" cx="0.5" cy="0.5" r="0.7">
+    <stop offset="0%" stop-color="#0a0f1a" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#060a14" stop-opacity="0.5"/>
+  </radialGradient>
+  <rect width="800" height="500" fill="url(#log-vignette)"/>
+</svg>

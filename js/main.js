@@ -95,7 +95,7 @@ web3Forms.forEach((form) => {
         error instanceof Error &&
         (error.message.toLowerCase().includes("failed to fetch") ||
           error.message.toLowerCase().includes("networkerror"))
-          ? "Unable to send right now. Please email morgan@firstcoast.io."
+          ? "Unable to send right now. Please email hello@firstcoast.io."
           : error instanceof Error
             ? error.message
             : "Unable to send your message right now.";

@@ -75,28 +75,20 @@
         <form class="contact-form web3-form" action="https://api.web3forms.com/submit" method="POST" data-reveal>
           <input type="hidden" name="access_key" value="668e7e9c-be9c-4bfb-bc4d-edf6f72996bb" />
           <input type="hidden" name="from_name" value="First Coast AI Website" />
-          <input
-            type="checkbox"
-            name="botcheck"
-            class="form-honeypot"
-            tabindex="-1"
-            autocomplete="off"
-            aria-hidden="true"
-          />
 
           <div class="form-field">
-            <label for="contact-email">Email</label>
-            <input id="contact-email" name="email" type="email" required />
+            <label for="contact-work-email">Work Email</label>
+            <input id="contact-work-email" name="email" type="email" required />
           </div>
 
           <div class="form-field">
-            <label for="contact-subject">Title / Subject</label>
-            <input id="contact-subject" name="subject" type="text" required />
+            <label for="contact-job-title">Job Title</label>
+            <input id="contact-job-title" name="job_title" type="text" required />
           </div>
 
-          <div class="form-field note-field">
-            <label for="contact-note">Note</label>
-            <textarea id="contact-note" name="message" rows="5"></textarea>
+          <div class="form-field">
+            <label for="contact-subject">Subject (Optional)</label>
+            <input id="contact-subject" name="subject" type="text" />
           </div>
 
           <button type="submit" class="btn">Send Message</button>

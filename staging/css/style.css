@@ -150,6 +150,12 @@ ul {
   font-weight: 700;
 }
 
+.brand-logo {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
 .brand-mark {
   width: 36px;
   height: 36px;

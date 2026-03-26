@@ -142,7 +142,28 @@
             Let&apos;s talk for 30 minutes. We&apos;ll tell you exactly where we&apos;d focus if we were in
             your position.
           </p>
-          <a class="btn" href="contact.html">Book a Free Consultation</a>
+          <form class="contact-form web3-form grid-two" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="668e7e9c-be9c-4bfb-bc4d-edf6f72996bb" />
+            <input type="hidden" name="from_name" value="First Coast AI Website" />
+
+            <div class="form-field">
+              <label for="svc-name">Full Name</label>
+              <input id="svc-name" name="name" type="text" required />
+            </div>
+            <div class="form-field">
+              <label for="svc-email">Email Address</label>
+              <input id="svc-email" name="email" type="email" required />
+            </div>
+            <div class="form-field field-span">
+              <label for="svc-company">Company Name</label>
+              <input id="svc-company" name="company_name" type="text" />
+            </div>
+            <label class="form-honeypot" for="svc-bot">Do not fill this out</label>
+            <input class="form-honeypot" id="svc-bot" name="botcheck" type="checkbox" tabindex="-1" autocomplete="off" />
+
+            <button type="submit" class="btn">Book a Free Consultation</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
         </div>
       </section>
     </main>

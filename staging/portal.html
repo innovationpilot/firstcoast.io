@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Portal Staging | First Coast AI</title>
+    <meta
+      name="description"
+      content="Secure client portal for First Coast AI diagnostic engagements: interview schedule, progress tracking, report delivery, and Stripe payment."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-bg" aria-hidden="true">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="grid-overlay"></span>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="/index.html" aria-label="First Coast AI Home">
+          <span class="brand-mark">FC</span>
+          <span>First Coast AI</span>
+        </a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary Navigation">
+          <a href="/index.html">Home</a>
+          <a href="/services.html">Services</a>
+          <a href="portal.html">Client Portal</a>
+          <a href="/contact.html" class="btn btn-sm">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="section">
+      <section class="container page-header" data-reveal>
+        <p class="kicker">Client Portal</p>
+        <h1>Track your diagnostic engagement in one place</h1>
+        <p class="lede">
+          Use your email magic link to view interview scheduling progress, payment status, and your
+          final report when delivery is complete.
+        </p>
+      </section>
+
+      <section class="container split portal-entry-layout">
+        <article class="section-card" data-reveal>
+          <h2>Request secure access link</h2>
+          <p>
+            Enter the email used for your engagement agreement. We will send a one-time magic link
+            to access your dashboard without a password.
+          </p>
+          <form id="magic-link-form" class="contact-form portal-access-form">
+            <label for="portal-email">Work email</label>
+            <input id="portal-email" name="email" type="email" autocomplete="email" required />
+
+            <label for="demo-deal">Engagement (demo fallback)</label>
+            <select id="demo-deal" name="dealId">
+              <option value="deal-alpha">Alpha Manufacturing</option>
+              <option value="deal-lighthouse">Lighthouse Logistics</option>
+            </select>
+
+            <button type="submit" class="btn">Send Magic Link</button>
+            <p id="access-feedback" class="form-note">
+              For production, connect this form to your portal auth endpoint.
+            </p>
+          </form>
+        </article>
+
+        <article class="section-card" data-reveal>
+          <h2>What this portal shows</h2>
+          <ul class="portal-feature-list">
+            <li>Interview schedule by participant with live status updates</li>
+            <li>Diagnostic progress from completed interviews versus total scope</li>
+            <li>Final report download when Phase 3 report generation marks it ready</li>
+            <li>Stripe payment options for the standard and beta engagement fees</li>
+            <li>CRM-visible payment state and timeline markers for Rob's follow-up</li>
+          </ul>
+          <p class="form-note">
+            If your link is missing, email <a href="mailto:hello@firstcoast.io">hello@firstcoast.io</a>.
+          </p>
+        </article>
+      </section>
+
+      <section id="dashboard-shell" class="container dashboard-shell is-hidden">
+        <article class="section-card dashboard-summary" data-reveal>
+          <p class="kicker">Engagement Snapshot</p>
+          <h2 id="company-name">Client Company</h2>
+          <p id="deal-owner">Primary contact: --</p>
+          <p id="hubspot-deal" class="form-note">HubSpot deal: --</p>
+          <div class="chip-row">
+            <span id="agreement-chip" class="status-chip">Agreement: pending</span>
+            <span id="payment-chip" class="status-chip">Payment: pending</span>
+            <span id="report-chip" class="status-chip">Report: in progress</span>
+          </div>
+        </article>
+
+        <div class="portal-grid">
+          <article class="section-card" data-reveal>
+            <h3>Interview Schedule</h3>
+            <div class="table-wrap">
+              <table class="schedule-table">
+                <thead>
+                  <tr>
+                    <th>Participant</th>
+                    <th>Role</th>
+                    <th>Interview Time</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="schedule-body"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="section-card" data-reveal>
+            <h3>Diagnostic Progress</h3>
+            <p id="progress-copy">0 of 0 interviews completed</p>
+            <div class="progress-track" role="presentation">
+              <span id="progress-fill" class="progress-fill"></span>
+            </div>
+            <p id="progress-percent" class="form-note">0% complete</p>
+          </article>
+
+          <article class="section-card" data-reveal>
+            <h3>Final Report</h3>
+            <p id="report-copy">
+              Your report will become available here once synthesis and QA are complete.
+            </p>
+            <a id="report-download" class="btn btn-disabled" href="#" aria-disabled="true">
+              Report Not Ready
+            </a>
+          </article>
+
+          <article class="section-card payment-card" data-reveal>
+            <h3>Engagement Payment</h3>
+            <p id="payment-copy">
+              Payment is triggered after Rob sends the engagement agreement and scope confirmation.
+            </p>
+
+            <label for="engagement-fee">Select fee option</label>
+            <select id="engagement-fee" name="engagementFee">
+              <option value="2500">$2,500 Standard Tier 1</option>
+              <option value="1500">$1,500 Beta Tier 1</option>
+            </select>
+
+            <div class="hero-actions">
+              <button id="stripe-checkout-btn" type="button" class="btn">
+                Pay with Stripe Checkout
+              </button>
+              <button id="stripe-invoice-btn" type="button" class="btn btn-ghost">
+                Open Stripe Invoice
+              </button>
+            </div>
+            <button id="mark-paid-btn" type="button" class="btn btn-ghost hidden-control">
+              Mark Paid (Demo)
+            </button>
+            <p id="payment-feedback" class="form-note">
+              Stripe sends receipts automatically; this portal mirrors status from CRM.
+            </p>
+          </article>
+
+          <article class="section-card" data-reveal>
+            <h3>CRM Deal Timeline</h3>
+            <ul id="crm-timeline" class="timeline-list"></ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>First Coast AI</p>
+        <p>AI Transformation Consulting for Northeast Florida</p>
+        <p>&copy; <span id="year"></span> First Coast AI</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+      window.FC_CLIENT_PORTAL_CONFIG = {
+        stripePublicKey: "pk_test_fcai_staging_portal_2026",
+        stripe: {
+          checkout: {
+            "2500": "/staging/stripe-checkout.html?amount=2500",
+            "1500": "/staging/stripe-checkout.html?amount=1500"
+          },
+          invoice: {
+            "2500": "/staging/stripe-invoice.html?amount=2500",
+            "1500": "/staging/stripe-invoice.html?amount=1500"
+          }
+        }
+      };
+    </script>
+    <script src="js/portal.js"></script>
+  </body>
+</html>

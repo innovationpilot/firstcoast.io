@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stripe Invoice Test | First Coast AI</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 2rem 1rem;
+        font-family: "Segoe UI", sans-serif;
+        color: #dbeafe;
+        background: #0f172a;
+      }
+      .card {
+        max-width: 44rem;
+        margin: 0 auto;
+        border: 1px solid #334155;
+        border-radius: 12px;
+        padding: 1.25rem;
+        background: #111827;
+      }
+      .tag {
+        display: inline-block;
+        margin-bottom: 0.75rem;
+        padding: 0.2rem 0.55rem;
+        border-radius: 999px;
+        font-size: 0.85rem;
+        background: #0369a1;
+        color: #dbeafe;
+      }
+      a {
+        color: #38bdf8;
+      }
+      code {
+        color: #a5f3fc;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <span class="tag">Stripe Test Mode</span>
+      <h1>Invoice Simulation</h1>
+      <p>This staging page simulates Stripe Invoice handoff for QA validation.</p>
+      <p>Configured publishable key: <code>pk_test_fcai_staging_portal_2026</code></p>
+      <p id="amount-line">Amount: $2,500</p>
+      <p><a href="/staging/portal.html">Return to Client Portal Staging</a></p>
+    </main>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const amount = params.get("amount") || "2500";
+      document.getElementById("amount-line").textContent =
+        "Amount: $" + Number(amount).toLocaleString("en-US");
+    </script>
+  </body>
+</html>

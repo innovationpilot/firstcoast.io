@@ -285,6 +285,19 @@ ul {
   white-space: nowrap;
 }
 
+.nav-login {
+  font-size: 0.8rem;
+  color: var(--muted);
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.nav-login:hover {
+  opacity: 1;
+  color: var(--brand);
+}
+
 .btn-ghost {
   border-color: var(--line-strong);
   background: rgba(16, 28, 53, 0.42);
